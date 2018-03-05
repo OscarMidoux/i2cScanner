@@ -15,7 +15,7 @@ void i2cScan(){
           Wire.beginTransmission(address);
           i2c[address] = (Wire.endTransmission() == 0);
           if( i2c[address] ){
-             SerialScan.print("x");
+             SerialScan.print("x"); // CLEMENT RUFFET
              nDevices++;
           }else{
              SerialScan.print(".");
